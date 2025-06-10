@@ -8,7 +8,7 @@ const API_URL = 'http://192.168.0.101:3000'; // Ajuste para o IP do seu servidor
 export default function RegistrarPlacar() {
   const route = useRoute();
   const navigation = useNavigation();
-  const { id } = route.params || {};
+  const { partidaId } = route.params || {};
 
   const [partida, setPartida] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -22,7 +22,7 @@ export default function RegistrarPlacar() {
       return;
     }
 
-    axios.get(`${API_URL}/partidas/${id}`)
+    axios.get(`${API_URL}/partidas/${partidaId}`)
       .then(res => {
         setPartida(res.data);
         setLoading(false);
@@ -44,7 +44,7 @@ export default function RegistrarPlacar() {
     }
 
     // Atualiza o placar no backend
-    axios.patch(`${API_URL}/partidas/${id}`, {
+    axios.patch(`${API_URL}/partidas/${partidaId}`, {
       placarTime1: p1,
       placarTime2: p2,
       status: 'finalizada',

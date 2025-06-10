@@ -1,0 +1,36 @@
+{
+  "partidas": [
+    {
+      "id": 1749513887044,
+      "equipe1": "Sport",
+      "equipe2": "Santa Cruz ",
+      "data": "2025-10-06T11:50:00",
+      "local": "Ilha do retiro ",
+      "placar": "",
+      "status": "Aguardando",
+      "sets": []
+    }
+  ],
+  "equipes": [
+    {
+      "id": "5d13",
+      "nome": "Sport",
+      "pontos": 0,
+      "partidas": 0,
+      "vitorias": 0,
+      "derrotas": 0,
+      "setsVencidos": 0,
+      "setsPerdidos": 0
+    },
+    {
+      "id": "4071",
+      "nome": "Santa Cruz ",
+      "pontos": 0,
+      "partidas": 0,
+      "vitorias": 0,
+      "derrotas": 0,
+      "setsVencidos": 0,
+      "setsPerdidos": 0
+    }
+  ]
+}
